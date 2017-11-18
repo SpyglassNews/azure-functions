@@ -1,0 +1,13 @@
+= GitHub Webhook Reflector
+
+
+This Azure Function can reflect a GitHub Webhook to a Jenkins instance, such as
+those hosted behind
+link:https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet[Azure private VNets].
+
+
+== Application Settings
+
+This function assumes that the Application Setting `JENKINS_URL` has been
+defined to a URL (e.g. `http://ci.example.com/`) in the configured Azure
+Function.
